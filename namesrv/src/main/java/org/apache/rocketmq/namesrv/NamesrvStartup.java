@@ -41,6 +41,9 @@ import org.apache.rocketmq.srvutil.ServerUtil;
 import org.apache.rocketmq.srvutil.ShutdownHookThread;
 import org.slf4j.LoggerFactory;
 
+/**
+ * environment variable ： ROCKETMQ_HOME=/Users/gnehcgnaw/WorkSpaces/OpenSourceProject/rocketmq/rocketmq/distribution
+ */
 public class NamesrvStartup {
 
     private static InternalLogger log;
