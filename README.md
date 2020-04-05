@@ -1,48 +1,79 @@
-Apache RocketMQ开发者指南
---------
+## Apache RocketMQ 
+[![Build Status](https://travis-ci.org/apache/rocketmq.svg?branch=master)](https://travis-ci.org/apache/rocketmq) [![Coverage Status](https://coveralls.io/repos/github/apache/rocketmq/badge.svg?branch=master)](https://coveralls.io/github/apache/rocketmq?branch=master)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.rocketmq/rocketmq-all/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Corg.apache.rocketmq)
+[![GitHub release](https://img.shields.io/badge/release-download-orange.svg)](https://rocketmq.apache.org/dowloading/releases)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/apache/rocketmq.svg)](http://isitmaintained.com/project/apache/rocketmq "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/apache/rocketmq.svg)](http://isitmaintained.com/project/apache/rocketmq "Percentage of issues still open")
+![Twitter Follow](https://img.shields.io/twitter/follow/ApacheRocketMQ?style=social)
 
-##### 这个开发者指南是帮助您快速了解,并使用 Apache RocketMQ
+**[Apache RocketMQ](https://rocketmq.apache.org) is a distributed messaging and streaming platform with low latency, high performance and reliability, trillion-level capacity and flexible scalability.**
 
-### 1. 概念和特性
+It offers a variety of features:
 
-- [概念(Concept)](concept.md)：介绍RocketMQ的基本概念模型。
+* Messageing patterns including publish/subscribe, request/reply and streaming
+* Financial grade transactional message
+* Built-in fault tolerance and high availability configuration options base on [DLedger](https://github.com/openmessaging/openmessaging-storage-dledger)
+* A variety of cross language clients, such as Java, C/C++, Python, Go
+* Pluggable transport protocols, such as TCP, SSL, AIO
+* Built-in message tracing capability, also support opentracing
+* Versatile big-data and streaming ecosytem integration
+* Message retroactivity by time or offset
+* Reliable FIFO and strict ordered messaging in the same queue
+* Efficient pull and push consumption model
+* Million-level message accumulation capacity in a single queue
+* Multiple messaging protocols like JMS and OpenMessaging
+* Flexible distributed scale-out deployment architecture
+* Lightning-fast batch message exchange system
+* Various message filter mechanics such as SQL and Tag
+* Docker images for isolated testing and cloud isolated clusters
+* Feature-rich administrative dashboard for configuration, metrics and monitoring
+* Authentication and authorization
+* Free open source connectors, for both sources and sinks
 
-- [特性(Features)](features.md)：介绍RocketMQ实现的功能特性。 
+----------
 
-
-### 2. 架构设计
-
-- [架构(Architecture)](architecture.md)：介绍RocketMQ部署架构和技术架构。
-
-- [设计(Design)](design.md)：介绍RocketMQ关键机制的设计原理，主要包括消息存储、通信机制、消息过滤、负载均衡、事务消息等。
-
-
-### 3. 样例
-
-- [样例(Example)](RocketMQ_Example.md) ：介绍RocketMQ的常见用法，包括基本样例、顺序消息样例、延时消息样例、批量消息样例、过滤消息样例、事务消息样例等。
-
-
-### 4. 最佳实践
-- [最佳实践（Best Practice）](best_practice.md)：介绍RocketMQ的最佳实践，包括生产者、消费者、Broker以及NameServer的最佳实践，客户端的配置方式以及JVM和linux的最佳参数配置。
-- [消息轨迹指南(Message Trace)](msg_trace/user_guide.md)：介绍RocketMQ消息轨迹的使用方法。
-- [权限管理(Auth Management)](acl/user_guide.md)：介绍如何快速部署和使用支持权限控制特性的RocketMQ集群。
-
-- [Dledger快速搭建(Quick Start)](dledger/quick_start.md)：介绍Dledger的快速搭建方法。
-
-- [集群部署(Cluster Deployment)](dledger/deploy_guide.md)：介绍Dledger的集群部署方式。
-
-### 5. 运维管理
-- [集群部署(Operation)](operation.md)：介绍单Master模式、多Master模式、多Master多slave模式等RocketMQ集群各种形式的部署方法以及运维工具mqadmin的使用方式。
-
-
-
-### 6. API Reference（待补充）
-
-- [DefaultMQProducer API Reference](client/java/API_Reference_DefaultMQProducer.md)
-
-
-
-
+## Learn it & Contact us
+* Mailing Lists: <https://rocketmq.apache.org/about/contact/>
+* Home: <https://rocketmq.apache.org>
+* Docs: <https://rocketmq.apache.org/docs/quick-start/>
+* Issues: <https://github.com/apache/rocketmq/issues>
+* Rips: <https://github.com/apache/rocketmq/wiki/RocketMQ-Improvement-Proposal>
+* Ask: <https://stackoverflow.com/questions/tagged/rocketmq>
+* Slack: <https://rocketmq-invite-automation.herokuapp.com/>
 
 
+----------
 
+## Apache RocketMQ Community
+* [RocketMQ Community Projects](https://github.com/apache/rocketmq-externals)
+----------
+
+## Contributing
+We always welcome new contributions, whether for trivial cleanups, [big new features](https://github.com/apache/rocketmq/wiki/RocketMQ-Improvement-Proposal) or other material rewards, more details see [here](http://rocketmq.apache.org/docs/how-to-contribute/).
+
+----------
+## License
+[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Copyright (C) Apache Software Foundation
+
+
+----------
+## Export Control Notice
+This distribution includes cryptographic software. The country in which you currently reside may have
+restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
+BEFORE using any encryption software, please check your country's laws, regulations and policies concerning
+the import, possession, or use, and re-export of encryption software, to see if this is permitted. See
+<http://www.wassenaar.org/> for more information.
+
+The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this
+software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software
+using or performing cryptographic functions with asymmetric algorithms. The form and manner of this Apache
+Software Foundation distribution makes it eligible for export under the License Exception ENC Technology
+Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for
+both object code and source code.
+
+The following provides more details on the included cryptographic software:
+
+This software uses Apache Commons Crypto (https://commons.apache.org/proper/commons-crypto/) to
+support authentication, and encryption and decryption of data sent across the network between
+services.
